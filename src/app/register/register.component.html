@@ -1,3 +1,17 @@
-<p>
-  register works!
-</p>
+<div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div class="jumbotron">
+          <h1 class="text-center">Mi Register</h1><br />
+          <div class="form-group">
+            Username: <input [value]="username" (input)="username = $event.target.value" class="form-control"><br/>
+            Password: <input [value]="password" (input)="password = $event.target.value" class="form-control" type="text"><br/>
+            <p *ngIf="username == 'camilo' && password == 'yeah'">Hola</p>
+            <button (click)="FuncionLogin()" class="btn btn-primary">Log In</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
