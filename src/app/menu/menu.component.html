@@ -1,6 +1,15 @@
-<ul>
-  <li routerLink="home">Home</li>
-  <li routerLink="login">Login</li>
-  <li routerLink="register">Register</li>
-  <li routerLink="contact">Contact</li>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">AmSoft</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item nav-link" routerLink="home" routerLinkActive="active">Home</li>
+      <li class="nav-item nav-link" routerLink="login" routerLinkActive="active">Login</li>
+      <li class="nav-item nav-link" routerLink="register" routerLinkActive="active">Register</li>
+      <li class="nav-item nav-link" routerLink="contact" routerLinkActive="active">Contact</li>
+    </ul>
+  </div>
+</nav>
