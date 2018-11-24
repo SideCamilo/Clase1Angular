@@ -5,10 +5,10 @@
         <div class="jumbotron">
           <h1 class="text-center">Register</h1><br />
           <div class="form-group">
-            Username: <input [value]="username" (input)="username = $event.target.value" class="form-control"><br/>
-            Password: <input [value]="password" (input)="password = $event.target.value" class="form-control" type="text"><br/>
+            Username: <input placeholder="Ingrese nombre de usuario" [value]="username" (input)="username = $event.target.value" class="form-control"><br/>
+            Password: <input placeholder="Ingrese su contraseña" [value]="password" (input)="password = $event.target.value" class="form-control" type="text"><br/>
             <p *ngIf="username == 'camilo' && password == 'yeah'">Hola</p>
-            <button (click)="FuncionLogin()" class="btn btn-primary">Log In</button>
+            <button (click)="mostrar()" class="btn btn-primary">Log In</button>
           </div>
         </div>
       </div>

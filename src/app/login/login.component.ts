@@ -8,14 +8,11 @@ import { bootstrap } from 'bootstrap';
 })
 export class LoginComponent implements OnInit {
 
-  username = "Ingrese su usuario";
-  password = "Ingrese su password";
+  username = "";
+  password = "";
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  FuncionLogin(){
   }
 }
